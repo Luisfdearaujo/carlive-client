@@ -1,45 +1,39 @@
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
-import { useContext } from "react";
-import { AuthContext } from "../../context/auth.context";
+import Logo from "./logo_small.png";
 
 function Navbar() {
-  // Get the value from the context
-  const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
+	// const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
 
-  return (
-    <nav className="Navbar">
-      <Link to="/">
-        <button>Home</button>
-      </Link>
+	return (
+		<nav class="navbar navbar expand-lg navbar-light bg-gray">
+			<div class="container-fluid">
+				<Link class="navbar-brand brand-custom" to="/">
+					<img src={Logo} alt="Logo" width="150" height="75" />
+				</Link>
+				{/* {isLoggedIn && (
+					<>
+						<Link to="/">
+							<button>Cars</button>
+						</Link>
+						<button onClick={logOutUser}>Logout</button>
+					</>
+				)}
+				{!isLoggedIn && (
+					<>
+						<Link to="/signup">
+							<button>Sign Up</button>
+						</Link>
 
-      {isLoggedIn && (
-        <>
-          <button onClick={logOutUser}>Logout</button>
-        </>
-      )}
-
-      {!isLoggedIn && (
-        <>
-          <Link to="/signup">
-            <button>Sign Up</button>
-          </Link>
-
-          <Link to="/login">
-            <button>Login</button>
-          </Link>
-        </>
-      )}
-
-      <div className="profile-img-wrapper">
-        {user && (
-          <Link to="/profile">
-            <img className="profile-img" src={user.image} alt="profile" />
-          </Link>
-        )}
-      </div>
-    </nav>
-  );
+						<Link to="/login">
+							<button>Login</button>
+						</Link>
+					</>
+				)} */}
+			</div>
+		</nav>
+	);
 }
 
 export default Navbar;
