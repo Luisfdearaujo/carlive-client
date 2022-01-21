@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./ScrollToTopButton.css";
 import arrowUp from "./blueArrow.png";
 
+
 const ScrollToTopButton = (props) => {
 	//set the state for when the button starts to appear
 

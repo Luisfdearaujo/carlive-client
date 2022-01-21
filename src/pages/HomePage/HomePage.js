@@ -1,6 +1,7 @@
 import vintageCar from "./CarLogo.jpeg";
 import Card from "../../components/Card/Card";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
+// import { Link } from "react-router-dom";
 
 import "./HomePage.css";
 
@@ -21,8 +22,9 @@ function HomePage() {
 			</div>
 			{/* Link to Add a new Car in the app */}
 			{/* <Link to="/addcar">
-				<button>Go</button>
+				<button>Add Your Car</button>
 			</Link> */}
+
 			<div className="scroll-top">
 				<ScrollToTopButton />
 			</div>
