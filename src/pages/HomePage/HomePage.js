@@ -1,7 +1,5 @@
 import vintageCar from "./CarLogo.jpeg";
 import Card from "../../components/Card/Card";
-// import { Link } from "react-router-dom";
-
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 
 import "./HomePage.css";
@@ -21,7 +19,7 @@ function HomePage() {
 			<div className="container-brands">
 				<Card title="Car Brand" body="" />
 			</div>
-			{/* Link to Add a new Car online */}
+			{/* Link to Add a new Car in the app */}
 			{/* <Link to="/addcar">
 				<button>Go</button>
 			</Link> */}

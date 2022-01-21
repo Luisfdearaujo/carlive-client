@@ -1,5 +1,5 @@
 import "./Card.css";
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
 function Card({ title, imageUrl, body }) {

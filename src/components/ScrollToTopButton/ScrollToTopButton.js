@@ -19,7 +19,6 @@ const ScrollToTopButton = (props) => {
 			behavior: "smooth",
 		});
 	};
-
 	return (
 		<>
 			<button onClick={scrollUp} className="to-Top" id="my-btn">
